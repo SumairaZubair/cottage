@@ -1,0 +1,29 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.producerNav{
+    width: 99%;
+    padding: 3px;
+    background-color: rgb(255, 255, 255);
+  @include flex;
+}
+.proImg{
+    width: 150px;
+}
+.producerNavText{
+    width: 130px;
+@include flex;
+justify-content: space-around;
+}
+.navbarText{
+    color: #B6C5D6;
+text-align: right;
+font-variant-numeric: lining-nums proportional-nums;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 25.5px; 
+letter-spacing: 0.18px;
+}

@@ -1,0 +1,515 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pen-card{
+    margin-left: 95%;
+}
+.producer-profile-flex,
+.pen-card title
+{
+    background-color: #f3f0f0;
+}
+.right-card{
+    width: 75%;
+    margin-top: 10px;
+    background: transparent;
+}
+.cards-2{
+   margin-bottom:10px;
+    background: #ffffff;
+}
+.pizzaCard{
+    border: none;
+    background: white;
+}
+.local{
+   @include flex;
+    border: none;
+    padding: 10px;
+    margin: -5px;
+}
+.local span{
+    color: #192E46;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.44px;
+}
+ .local button{
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+background: transparent;
+text-align: center;
+padding: 2px;
+border: 2px solid rgb(217, 214, 214);
+ }
+.side-card{
+    margin: auto;
+width: 80%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: none;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.profile-card{
+    margin-top: 20px;
+    background-color: #ffffff;
+    @include flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #192E46;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.profile-card p{
+    color: #4C6889;
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding: 4px;
+}
+.profile-card button{
+     border-radius: 2px;
+     color: #768CA5;
+     margin-top: 20px;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.7px;
+}
+.man{
+    margin: auto;
+    margin-left: 35%;
+    border-radius: 60px;
+}
+.part{
+    display: flex;
+    align-items: center;
+}
+.active{
+    color: #192E46;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.18px;
+}
+.active-span{
+    color: #FB775A;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.18px;
+}
+.btn-add{
+    margin: 10px;
+    width: 180px;
+height: 50px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #FB775A;
+}
+.main-card{
+   @include flex;
+    flex-direction: column;
+}
+ .big-flex{
+    @include flex;
+    flex-direction: row;
+ }
+.dashBtn{
+    @include flex;
+    flex-direction: column;
+}
+.p{
+color: #768CA5;
+font-size: 15px;
+padding-bottom: 3px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.91px;
+}
+.ant-card-type-inner .ant-card-head {
+    padding: 0 24px; 
+    background: transparent;
+}
+.pp{
+    color: #192E46;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.18px;
+padding-bottom: 5px;
+}
+.dashboardBtn{
+    width: 159px;
+height: 50px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #192E46;
+color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.14px; 
+}
+.ant-modal .ant-modal-content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #ffffffcb;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: none;
+    pointer-events:transparent;
+    padding: 1px 24px;
+}
+.ant-card .ant-card-body {
+    border-radius: 0 0 8px 8px;
+}
+.edit{
+    text-align: center;
+    margin: 20px;
+}
+.profileDiv{
+    @include flex;
+ justify-content: center;
+}
+.profilePicture{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    margin-bottom: 20px;
+    background-image: url('../../Assest/man.png');
+    
+}
+.need{
+    color: #192E46;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 63px; 
+letter-spacing: 0.18px;
+}
+.profilePicture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 58, 102, 0.503); 
+    border-radius: 60px;
+    z-index: 1; 
+}
+.pennIcon{
+    position: absolute;
+    top:25%;
+    left:35%;
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+}
+/* MyForm.css */
+.my-form {
+    @include flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .heading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .form-group {
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .form-groups {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  label{
+    font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 200.5%; 
+letter-spacing: 0.91px;
+color: #768CA5;
+  }
+  .button {
+    display: block;
+    width: 350px;
+height: 40px;
+margin-top: 20px;
+border: none;
+flex-shrink: 0;
+border-radius: 4px;
+background: #FB775A;
+color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 157.5%; 
+letter-spacing: 0.18px;
+
+  }
+  .form-rows{
+    display: block;
+  }
+.btn-div{
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.saveMsg{
+    width: 350px;
+    margin-top: 10px;
+    border: 1px solid #FEAAAA;
+background: #FFE2E2;
+color: #FB5A5A;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.18px;
+}
+.full-page-modal {
+    width: 100% !important;
+    height: 90% !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .full-page-modal .ant-modal-content {
+    border-radius: 0;
+    box-shadow: none; 
+    height: 100%; 
+  }
+
+.full-page-modal {
+  width: 90% !important;
+  height: 95% !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Style the modal content if needed */
+.full-page-modal .ant-modal-content {
+  border-radius: 0; 
+  box-shadow: none; 
+  height: 100%; 
+}
+
+.full-page-modal .ant-modal-title {
+  background-color: #f0f2f5; 
+  padding: 16px; 
+}
+
+.full-page-modal .ant-modal-footer {
+  display: none; 
+}
+.ant-modal .ant-modal-content{
+    background-color: white;
+}
+  .full-page-modal .ant-modal-title {
+    background-color: #f0f2f5; 
+    padding: 16px; 
+  }
+  
+  .full-page-modal .ant-modal-footer {
+    display: none; 
+  }
+  .ant-modal{
+    top: 20px;
+  }
+  .center-div{
+  
+    height: 90vh;
+    @include flex;
+    justify-content: center;
+  }
+  .modelh1{
+    width: 600px;
+    height: 200px;
+    @include flex;
+    justify-content:center ;
+    border: 2px solid navy;
+  }
+@media (max-width:768px){
+    .side-card{
+        margin: auto;
+    width: 100%;
+    height: auto;
+ padding: 10px ;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-bottom: none;
+        border-radius: 2px;
+    }
+    .profile-card{
+        padding: 10px;
+        @include flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #192E46;
+        font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
+    .cards-2{
+        width: 100%;
+        padding: 1px;
+        background: #ffffff;
+        margin-bottom: 20px;
+    }
+    .profile-card p{
+        color: #4C6889;
+    text-align: center;
+        font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 4px;
+}
+.profile-card button{
+    font-size: 12px;
+}
+.part{
+    @include flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.btn-add{
+    margin: 5px;
+    width: 100%;
+height: 40px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #FB775A;
+}
+.local{
+    @include flex;
+    padding:10px;
+}
+.right-card{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 1px;
+    padding-bottom: 20px;
+}
+.main-card{
+    width: 50%;
+    display: block;  
+}
+.dashBtn{
+    display: block;
+}
+.big-flex{
+    align-items: center;
+    display: block;
+    justify-content: first baseline;
+    flex-direction: column;
+ }
+ .main-card{
+    display: block;
+    justify-content: flex-start;
+    flex-direction: column;
+ }
+ .dashBtn{
+    display: block;
+    justify-content: left;
+    flex-direction: column;
+ }
+ .local button {
+ width: 30px;
+ height: 30px;
+ margin-left: 5px;
+    flex-shrink: 0;
+    background: transparent;
+    text-align: center;
+    padding: 1px;
+    border: 2px solid rgb(217, 214, 214);
+}
+.man{
+    margin-left: 30%;
+}
+.dashboardBtn{
+    width: 100%;
+}
+.my-form {
+    @include flex;
+    justify-content: flex-start;
+    flex-direction: column;
+        width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  .form-groups {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+
+  .button {
+    width: 100%; 
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center; 
+    padding-top: 5px;
+  }
+  .btn-div{
+    width: 100%;
+    margin: 0 auto;
+
+    border-radius: 5px;
+}
+.form-row {
+    flex-direction: column; 
+}
+.saveMsg{
+    width: 100%;
+    margin: auto;
+    margin-top: 10px
+}
+.form-group {
+width: 100%;
+}
+}
